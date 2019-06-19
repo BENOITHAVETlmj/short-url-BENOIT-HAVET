@@ -29,11 +29,13 @@ const AdressList = ({ isLoading, adressList }) => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={newUrl.originalUrl}
+                  href={
+                    "https://short-url-server-benoit-havet.herokuapp.com/" +
+                    newUrl.shortUrl
+                  }
                 >
-                  {" "}
-                  https://short-url-benoit-havet.herokuapp.com/
-                  {newUrl.shortUrl}
+                  {"https://short-url-server-benoit-havet.herokuapp.com/" +
+                    newUrl.shortUrl}
                 </a>
                 <span>{newUrl.visits}</span>
               </li>
