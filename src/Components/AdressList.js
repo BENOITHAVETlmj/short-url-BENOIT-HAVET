@@ -29,7 +29,7 @@ const AdressList = ({ isLoading, adressList }) => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={newUrl.shortUrl}
+                  href={newUrl.originalUrl}
                 >
                   {" "}
                   https://short-url-benoit-havet.herokuapp.com/
