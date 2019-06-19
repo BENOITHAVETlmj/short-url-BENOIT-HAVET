@@ -7,7 +7,7 @@ import Alert from "../src/Components/Alert";
 
 class App extends Component {
   state = {
-    adressList: "",
+    adressList: [],
     originalUrl: "",
     shortUrl: "",
     isLoading: true,
@@ -23,34 +23,32 @@ class App extends Component {
 
   handleSubmit = async e => {
     e.preventDefault();
-    console.log(this.state.originalUrl);
-    if (this.state.originalUrl) {
-      await axios
-        .post("http://localhost:3001/create/url", {
-          originalUrl: this.state.originalUrl
-        })
-        .then(response => {
-          // on spread le tableau de la data et push dans ce tableau les newURL
-          // Pour ne pas avoir à rafraîchir la page
-          const listUrl = [...this.state.adresslist];
-          const newUrl = {
-            originalUrl: response.data.originalUrl,
-            shortUrl: response.data.shortUrl,
-            visits: response.data.visits
-          };
-          listUrl.push(newUrl);
-          this.setState({ adresslist: listUrl, status: 200 }, () =>
-            this.setState({ status: null })
-          );
-        })
-        .catch(error =>
-          this.setState({ status: error.response.status }, () =>
-            this.setState({ status: null })
-          )
-        );
-    } else {
-      alert(this.state.status);
-    }
+    console.log(this.state.originalUrl + "xxxxxxx");
+    await axios
+      .post("http://localhost:3001/create/url", {
+        originalUrl: this.state.originalUrl
+      })
+      .then(response => {
+        console.log(response.data);
+
+        // on spread le tableau de la data et push dans ce tableau les newURL
+        // Pour ne pas avoir à rafraîchir la page
+        console.log("mimi", this.state.adressList);
+
+        const listUrl = [...this.state.adressList];
+        const newUrl = {
+          originalUrl: response.data.originalUrl,
+          shortUrl: response.data.shortUrl,
+          visits: response.data.visits
+        };
+        listUrl.push(newUrl);
+        this.setState({ adressList: listUrl, status: null, originalUrl: "" });
+      })
+      .catch(error =>
+        this.setState({ status: error.response.status }, () =>
+          this.setState({ status: null })
+        )
+      );
   };
   render() {
     return (

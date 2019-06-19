@@ -79,10 +79,15 @@ code {
   border-bottom: solid 1px rgb(197, 197, 197);
 }
 
-.adress a:first-child {
+.adress :nth-child(1) {
   margin-left: 30px;
+  width: 140px;
 }
-.adress a,
-.adress span {
+.adress :nth-child(2) {
   list-style: none;
+  width: 130px;
+}
+.adress :nth-child(3) {
+  list-style: none;
+  width: 65px;
 }
