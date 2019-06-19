@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container {
+  padding: 50px;
+}
+/* --------------- INPUTADRESS -------------------------- */
+.container-header {
+  background-color: #5b47d3;
+  height: 30vh;
+  padding: 30px 60px 30px 60px;
+}
+.container-header h1 {
+  color: white;
+  font-weight: 400;
+}
+.container-header input {
+  width: 700px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  padding: 0px 8px;
+  font-size: 20px;
+}
+.container-header input::placeholder {
+  padding-left: 15px;
+  font-size: 15spx;
+}
+.container-header button {
+  width: 180px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 3px;
+  color: #5b47d3;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* --------------- ADRESSLIST -------------------------- */
+.container {
+  padding: 60px 60px;
+}
+.container section {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(247, 247, 247);
+  padding: 15px 30px;
+}
+
+.container section h2 {
+  font-size: 15px;
+  margin: 0px;
+  color: rgb(104, 104, 104);
+  font-weight: 500;
+}
+.adresses-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+
+.adress {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-bottom: solid 1px rgb(197, 197, 197);
+}
+
+.adress a:first-child {
+  margin-left: 30px;
+}
+.adress a,
+.adress span {
+  list-style: none;
+}
