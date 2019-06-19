@@ -140,11 +140,6 @@ code {
   .adress span {
     font-size: 12px;
   }
-
-  .adress :nth-child(2) {
-    list-style: none;
-    width: 100px;
-  }
 }
 
 @media (max-width: 655px) {
@@ -168,18 +163,5 @@ code {
   }
   .adress span {
     font-size: 10px;
-  }
-
-  .adress :nth-child(1) {
-    margin-left: 30px;
-    width: 100px;
-  }
-  .adress :nth-child(2) {
-    list-style: none;
-    width: 80px;
-  }
-  .adress :nth-child(3) {
-    list-style: none;
-    width: 45px;
   }
 }
