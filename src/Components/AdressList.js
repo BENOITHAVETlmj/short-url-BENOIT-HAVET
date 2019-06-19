@@ -32,7 +32,7 @@ const AdressList = ({ isLoading, adressList }) => {
                   href={newUrl.shortUrl}
                 >
                   {" "}
-                  https://short-url-server-benoit-havet.herokuapp.com/
+                  https://short-url-benoit-havet.herokuapp.com/
                   {newUrl.shortUrl}
                 </a>
                 <span>{newUrl.visits}</span>
