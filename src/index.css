@@ -25,6 +25,10 @@ code {
   color: white;
   font-weight: 400;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
 .container-header input {
   width: 700px;
   height: 40px;
@@ -75,19 +79,22 @@ code {
 .adress {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 15px 0px;
   border-bottom: solid 1px rgb(197, 197, 197);
 }
 
 .adress :nth-child(1) {
+  font-size: 10px;
   margin-left: 30px;
   width: 140px;
 }
 .adress :nth-child(2) {
+  font-size: 10px;
   list-style: none;
   width: 130px;
 }
 .adress :nth-child(3) {
+  font-size: 10px;
   list-style: none;
   width: 65px;
 }
@@ -98,15 +105,13 @@ code {
   .container-header {
     height: 30vh;
     padding: 30px 60px 30px 60px;
-    display: flex;
-    flex-direction: column;
   }
   .container-header h1 {
     font-weight: 300;
     font-size: 22px;
   }
   .container-header input {
-    width: 400px;
+    width: 550px;
     height: 30px;
     font-size: 15px;
   }
