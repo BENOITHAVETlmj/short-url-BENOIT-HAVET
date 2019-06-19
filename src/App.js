@@ -23,9 +23,8 @@ class App extends Component {
 
   handleSubmit = async e => {
     e.preventDefault();
-    console.log(this.state.originalUrl + "xxxxxxx");
     await axios
-      .post("http://localhost:3001/create/url", {
+      .post("https://short-url-server-benoit-havet.herokuapp.com/create/url", {
         originalUrl: this.state.originalUrl
       })
       .then(response => {
@@ -65,7 +64,9 @@ class App extends Component {
     );
   }
   async componentDidMount() {
-    const response = await axios.get("http://localhost:3001/");
+    const response = await axios.get(
+      "https://short-url-server-benoit-havet.herokuapp.com/"
+    );
     console.log(response.data);
 
     this.setState({
