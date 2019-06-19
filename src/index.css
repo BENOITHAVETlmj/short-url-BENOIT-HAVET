@@ -25,12 +25,9 @@ code {
   color: white;
   font-weight: 400;
 }
-form {
-  display: flex;
-  flex-direction: column;
-}
+
 .container-header input {
-  width: 700px;
+  width: 600px;
   height: 40px;
   border: none;
   outline: none;
@@ -84,28 +81,35 @@ form {
 }
 
 .adress :nth-child(1) {
-  font-size: 10px;
   margin-left: 30px;
   width: 140px;
 }
 .adress :nth-child(2) {
-  font-size: 10px;
   list-style: none;
   width: 130px;
 }
 .adress :nth-child(3) {
-  font-size: 10px;
   list-style: none;
   width: 65px;
 }
 
 /* -------------------- */
 
-@media (max-width: 1035px) {
+@media (max-width: 985px) {
   .container-header {
     height: 30vh;
     padding: 30px 60px 30px 60px;
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input {
+    margin-bottom: 20px;
+  }
+
   .container-header h1 {
     font-weight: 300;
     font-size: 22px;
@@ -121,7 +125,7 @@ form {
   }
   .container-header button {
     width: 160px;
-    height: 30px;
+    height: 25px;
   }
 
   /* --------------- ADRESSLIST -------------------------- */
@@ -129,5 +133,16 @@ form {
   .container section h2 {
     font-size: 10px;
     font-weight: 300;
+  }
+  .adress a {
+    font-size: 10px;
+  }
+  .adress span {
+    font-size: 10px;
+  }
+
+  .adress :nth-child(2) {
+    list-style: none;
+    width: 140px;
   }
 }
