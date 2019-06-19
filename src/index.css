@@ -91,3 +91,38 @@ code {
   list-style: none;
   width: 65px;
 }
+
+/* -------------------- */
+
+@media (max-width: 1035px) {
+  .container-header {
+    height: 30vh;
+    padding: 30px 60px 30px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-header h1 {
+    font-weight: 300;
+    font-size: 22px;
+  }
+  .container-header input {
+    width: 400px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .container-header input::placeholder {
+    padding-left: 12px;
+    font-size: 10px;
+  }
+  .container-header button {
+    width: 160px;
+    height: 30px;
+  }
+
+  /* --------------- ADRESSLIST -------------------------- */
+
+  .container section h2 {
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
