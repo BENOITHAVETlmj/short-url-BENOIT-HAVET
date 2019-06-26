@@ -1,4 +1,8 @@
 
+![Alt text](/..//screeshot.jpeg?raw=true "view") 
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
