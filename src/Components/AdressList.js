@@ -34,8 +34,7 @@ const AdressList = ({ isLoading, adressList }) => {
                     newUrl.shortUrl
                   }
                 >
-                  {"https://short-url-benoit-havet.herokuapp.com/" +
-                    newUrl.shortUrl}
+                  {"Url/" + newUrl.shortUrl + ".com"}
                 </a>
                 <span>{newUrl.visits}</span>
               </li>
