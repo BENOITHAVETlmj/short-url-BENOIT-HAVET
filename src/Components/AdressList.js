@@ -34,7 +34,7 @@ const AdressList = ({ isLoading, adressList }) => {
                     newUrl.shortUrl
                   }
                 >
-                  {"Url/" + newUrl.shortUrl + ".com"}
+                  {"url/" + newUrl.shortUrl + ".com"}
                 </a>
                 <span>{newUrl.visits}</span>
               </li>
